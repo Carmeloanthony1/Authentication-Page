@@ -13,3 +13,12 @@ function togglepassword(){
         Spanicon.innerHTML = openeye;
     }
 }
+
+function login(){
+    const email = document.getElementById("Email").value;
+    const password = document.getElementById("Password").value;
+
+    if(email.trim() === "" || password.trim() === ""){
+        alert("Email dan Password tidak boleh kosong");
+    }
+}
